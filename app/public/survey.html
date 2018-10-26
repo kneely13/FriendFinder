@@ -11,8 +11,29 @@
 <body>
     <div class="container" width=80%>
         <h2 id=surveyTitle>Survey Questions</h2>
-        <h3>Lets Find your Match!</h3>
+        <!-- <h3>Lets Find your Match!</h3> -->
         <hr>
+        <h1><strong>Who are you?</strong></h1><br>
+        <h2><strong>Name</strong> (Required)*</h2>
+        <input type="text" id="name" class="form-control" required><br>
+        <h2>Your photo link (Required)*</h2>
+        <input type="text" id="userPhoto" class="form-control" required=""><br>
+        <br>
+        <hr>
+        <h2>Question 1</h2>
+        <h4>This will be the text of question 1.</h4>
+        <select class="chosen-select" id="q1" style="display: none;">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2 (Disagree)</option>
+            <option value="2">3 (Neutral)</option>
+            <option value="4">4 (Agree)</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <div class="chosen-container chosen-container-single" title id="q1_chosen">
+            <a class="chosen-single chosen-default"><span>Select and option</span></a>
+            <div><b></b></div>
+        </div>
+
     </div>
     
 

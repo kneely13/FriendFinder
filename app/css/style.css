@@ -3,4 +3,29 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
+    width:970px;
+}
+
+#surveyTitle {
+    font-size:55px;
+}
+
+.chosen-container {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    width: 156px;
+    
+}
+    
+.chosen-container-single .chosen-single span {
+    display: block;
+    overflow: hidden;
+    margin-right: 26px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
