@@ -1,9 +1,4 @@
-var express = require ('express')
-var path = require ('path')
 
-var app = express();
-
-var PORT = process.env.PORT || 8080;
 //include two routes
 
 //First: A GET Route to /survey which should display the survey page.
@@ -17,6 +12,3 @@ app.get("/", function(req,res){
     // res.render('home')
 })
 
-app.listen(PORT, function() {
-    console.log("App listening on PORT " + PORT);
-  });

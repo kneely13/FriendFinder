@@ -32,16 +32,4 @@ var friends = [{
 }]
   
 
-    app.post("/api/waitList", function (req, res) {
-
-        // pushes the request(object we just created) into the numbers Array.
-        waitList.push(req)
-
-        var newWaitList = req.body; 
-
-        console.log(newWaitList);
-
-        //res.json(takes result and turns it into json)
-        res.json(newWaitList);
-    });
-}
+    
