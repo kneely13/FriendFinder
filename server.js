@@ -1,7 +1,11 @@
 var express = require ('express')
-var path = require ('path')
-
+var api = require('./apiRoutes')
+var html = ('./htmlRoutes')
 var app = express();
+
+
+app.use(api)
+app.use(html)
 
 var PORT = process.env.PORT || 8080;
 

@@ -1,14 +1,20 @@
+var express = require ('express')
+var router = require('./apiRoutes')
 
 //include two routes
-
-//First: A GET Route to /survey which should display the survey page.
-app.get("/survey", function(req,res){
-    res.sendFile(path.join(__dirname, "survey.html"));
+router.get('/', function(req, res) {
+    res.send('homepage')
 })
 
-//Second: A default, catch-all route that leads to home.html which displays the home page.
-app.get("/", function(req,res){
-    res.sendFile(path.join(__dirname, "home.html"));
-    // res.render('home')
-})
+// module.exports = router
+// //First: A GET Route to /survey which should display the survey page.
+// app.get("/survey", function(req,res){
+//     res.sendFile(path.join(__dirname, "survey.html"));
+// })
+
+// //Second: A default, catch-all route that leads to home.html which displays the home page.
+// app.get("/", function(req,res){
+//     res.sendFile(path.join(__dirname, "home.html"));
+//     // res.render('home')
+// })
 
