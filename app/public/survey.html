@@ -5,12 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FriendFinder|Survey</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
-
-    <script src="htmlRoutes.js"></script>
+    
 </head>
-<body>
+<body style="background-color: #52b2ff;">
     <div class="container" width=80%>
         <h2 id=surveyTitle>Survey Questions</h2>
         <!-- <h3>Lets Find your Match!</h3> -->
@@ -19,7 +24,7 @@
         <h2><strong>Name</strong> (Required)*</h2>
         <input type="text" id="name" class="form-control" required><br>
         <h2>Your photo link (Required)*</h2>
-        <input type="text" id="userPhoto" class="form-control" required=""><br>
+        <input type="text" id="userPhoto" class="form-control" required=" "><br>
         <br>
         <hr>
         <h2>Question 1</h2>
@@ -32,8 +37,20 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
         <div class="chosen-container chosen-container-single" title id="q1_chosen">
-            <a class="chosen-single chosen-default"><span>Select and option</span></a>
-            <div><b></b></div>
+            <a class="chosen-single chosen-default"><span>Answer</span><div><b></b></div></a>
+            
+            <div class="chosen-drop">
+                <div class="chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class="chosen-results">
+                    <li class="active-result" data-option-array-index="1" style>1 (Strongly Disagree)</li>
+                    <li class="active-result" data-option-array-index="2" style>2 (Disagree)</li>
+                    <li class="active-result" data-option-array-index="3" style>3 (Neutral)</li>
+                    <li class="active-result result-selected" data-option-array-index="4" style>4 (Agree)</li>
+                    <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
+                </ul>
+            </div>
         </div>
 
         <h2>Question 2</h2>
@@ -46,10 +63,21 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
         <div class="chosen-container chosen-container-single" title id="q2_chosen">
-            <a class="chosen-single chosen-default"><span>Select and option</span></a>
-            <div><b></b></div>
+            <a class="chosen-single chosen-default"><span>4</span><div><b></b></div></a>
+            
+            <div class="chosen-drop">
+                <div class="chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class="chosen-results">
+                    <li class="active-result" data-option-array-index="1" style>1 (Strongly Disagree)</li>
+                    <li class="active-result" data-option-array-index="2" style>2 (Disagree)</li>
+                    <li class="active-result" data-option-array-index="3" style>3 (Neutral)</li>
+                    <li class="active-result result-selected" data-option-array-index="4" style>4 (Agree)</li>
+                    <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
+                </ul>
+            </div>
         </div>
-
 
         <h2>Question 3</h2>
         <h4>This will be the text of question 3.</h4>
@@ -61,10 +89,21 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
         <div class="chosen-container chosen-container-single" title id="q3_chosen">
-            <a class="chosen-single chosen-default"><span>Select and option</span></a>
-            <div><b></b></div>
+            <a class="chosen-single chosen-default"><span>5</span><div><b></b></div></a>
+            
+            <div class="chosen-drop">
+                <div class="chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class="chosen-results">
+                    <li class="active-result" data-option-array-index="1" style>1 (Strongly Disagree)</li>
+                    <li class="active-result" data-option-array-index="2" style>2 (Disagree)</li>
+                    <li class="active-result" data-option-array-index="3" style>3 (Neutral)</li>
+                    <li class="active-result" data-option-array-index="4" style>4 (Agree)</li>
+                    <li class="active-result result-selected" data-option-array-index="5" style>5 (Strongly Agree)</li>
+                </ul>
+            </div>
         </div>
-
 
         <h2>Question 4</h2>
         <h4>This will be the text of question 4.</h4>
@@ -76,10 +115,21 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
         <div class="chosen-container chosen-container-single" title id="q4_chosen">
-            <a class="chosen-single chosen-default"><span>Select and option</span></a>
-            <div><b></b></div>
+            <a class="chosen-single chosen-default"><span>1</span><div><b></b></div></a>
+            
+            <div class="chosen-drop">
+                <div class="chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class="chosen-results">
+                    <li class="active-result result-selected" data-option-array-index="1" style>1 (Strongly Disagree)</li>
+                    <li class="active-result" data-option-array-index="2" style>2 (Disagree)</li>
+                    <li class="active-result" data-option-array-index="3" style>3 (Neutral)</li>
+                    <li class="active-result " data-option-array-index="4" style>4 (Agree)</li>
+                    <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
+                </ul>
+            </div>
         </div>
-
 
         <h2>Question 5</h2>
         <h4>This will be the text of question 5.</h4>
@@ -91,10 +141,21 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
         <div class="chosen-container chosen-container-single" title id="q5_chosen">
-            <a class="chosen-single chosen-default"><span>Select and option</span></a>
-            <div><b></b></div>
+            <a class="chosen-single chosen-default"><span>3</span><div><b></b></div></a>
+            
+            <div class="chosen-drop">
+                <div class="chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class="chosen-results">
+                    <li class="active-result" data-option-array-index="1" style>1 (Strongly Disagree)</li>
+                    <li class="active-result " data-option-array-index="2" style>2 (Disagree)</li>
+                    <li class="active-result result-selected" data-option-array-index="3" style>3 (Neutral)</li>
+                    <li class="active-result " data-option-array-index="4" style>4 (Agree)</li>
+                    <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
+                </ul>
+            </div>
         </div>
-
 
         <h2>Question 6</h2>
         <h4>This will be the text of question 6.</h4>
@@ -106,10 +167,21 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
         <div class="chosen-container chosen-container-single" title id="q6_chosen">
-            <a class="chosen-single chosen-default"><span>Select and option</span></a>
-            <div><b></b></div>
+            <a class="chosen-single chosen-default"><span>1</span><div><b></b></div></a>
+            
+            <div class="chosen-drop">
+                <div class="chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class="chosen-results">
+                    <li class="active-result result-selected" data-option-array-index="1" style>1 (Strongly Disagree)</li>
+                    <li class="active-result " data-option-array-index="2" style>2 (Disagree)</li>
+                    <li class="active-result " data-option-array-index="3" style>3 (Neutral)</li>
+                    <li class="active-result " data-option-array-index="4" style>4 (Agree)</li>
+                    <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
+                </ul>
+            </div>
         </div>
-
 
         <h2>Question 7</h2>
         <h4>This will be the text of question 7.</h4>
@@ -120,11 +192,22 @@
             <option value="4">4 (Agree)</option>
             <option value="5">5 (Strongly Agree)</option>
         </select>
-        <div class="chosen-container chosen-container-single" title id="q7_chosen">
-            <a class="chosen-single chosen-default"><span>Select and option</span></a>
-            <div><b></b></div>
+        <div class="chosen-container chosen-container-single" title id="q5_chosen">
+            <a class="chosen-single chosen-default"><span>2</span><div><b></b></div></a>
+            
+            <div class="chosen-drop">
+                <div class="chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class="chosen-results">
+                    <li class="active-result" data-option-array-index="1" style>1 (Strongly Disagree)</li>
+                    <li class="active-result result-selected" data-option-array-index="2" style>2 (Disagree)</li>
+                    <li class="active-result " data-option-array-index="3" style>3 (Neutral)</li>
+                    <li class="active-result " data-option-array-index="4" style>4 (Agree)</li>
+                    <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
+                </ul>
+            </div>
         </div>
-
 
         <h2>Question 8</h2>
         <h4>This will be the text of question 8.</h4>
@@ -136,39 +219,47 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
         <div class="chosen-container chosen-container-single" title id="q8_chosen">
-            <a class="chosen-single chosen-default"><span>Select and option</span></a>
-            <div><b></b></div>
+            <a class="chosen-single chosen-default"><span>4</span><div><b></b></div></a>
+            
+            <div class="chosen-drop">
+                <div class="chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class="chosen-results">
+                    <li class="active-result" data-option-array-index="1" style>1 (Strongly Disagree)</li>
+                    <li class="active-result " data-option-array-index="2" style>2 (Disagree)</li>
+                    <li class="active-result " data-option-array-index="3" style>3 (Neutral)</li>
+                    <li class="active-result result-selected" data-option-array-index="4" style>4 (Agree)</li>
+                    <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
+                </ul>
+            </div>
         </div>
-
 
         <h2>Question 9</h2>
         <h4>This will be the text of question 9.</h4>
-        <div class="select animated zoomIn">
-                <!-- You can toggle select (disabled) -->
-                <input type="radio" name="option" disabled>
-                <i class="toggle icon icon-arrow-down"></i>
-                <i class="toggle icon icon-arrow-up"></i>
-                <span class="placeholder">Choose...</span>
-                <label class="option">
-                    <input type="radio" name="option">
-                    <span class="title"><i class="icon icon-speedometer"></i>Speedometer</span>
-                </label>
-                <label class="option">
-                    <input type="radio" name="option">
-                    <span class="title"><i class="icon icon-fire"></i>Fire</span>
-                </label>
-                <label class="option">
-                    <input type="radio" name="option" disabled>
-                    <span class="title"><i class="icon icon-handbag"></i>Handbag</span>
-                </label>
-                <label class="option">
-                    <input type="radio" name="option">
-                    <span class="title"><i class="icon icon-badge"></i>Badge</span>
-                </label>
+        <select class="chosen-select" id="q9" style="display: none;">
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2 (Disagree)</option>
+            <option value="2">3 (Neutral)</option>
+            <option value="4">4 (Agree)</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+        <div class="chosen-container chosen-container-single" title id="q9_chosen">
+            <a class="chosen-single chosen-default"><span>2</span><div><b></b></div></a>
+            
+            <div class="chosen-drop">
+                <div class="chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class="chosen-results">
+                    <li class="active-result" data-option-array-index="1" style>1 (Strongly Disagree)</li>
+                    <li class="active-result result-selected" data-option-array-index="2" style>2 (Disagree)</li>
+                    <li class="active-result " data-option-array-index="3" style>3 (Neutral)</li>
+                    <li class="active-result " data-option-array-index="4" style>4 (Agree)</li>
+                    <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
+                </ul>
             </div>
-            <br>
-            <br>
-
+        </div>
 
         <h2>Question 10</h2>
         <h4>This will be the text of question 10.</h4>
@@ -180,14 +271,73 @@
             <option value="5">5 (Strongly Agree)</option>
         </select>
         <div class="chosen-container chosen-container-single" title id="q10_chosen">
-            <a class="chosen-single chosen-default"><span>Select and option</span></a>
-            <div><b></b></div>
+            <a class="chosen-single chosen-default"><span>3</span><div><b></b></div></a>
+            
+            <div class="chosen-drop">
+                <div class="chosen-search">
+                    <input type="text" autocomplete="off">
+                </div>
+                <ul class="chosen-results">
+                    <li class="active-result" data-option-array-index="1" style>1 (Strongly Disagree)</li>
+                    <li class="active-result " data-option-array-index="2" style>2 (Disagree)</li>
+                    <li class="active-result result-selected" data-option-array-index="3" style>3 (Neutral)</li>
+                    <li class="active-result " data-option-array-index="4" style>4 (Agree)</li>
+                    <li class="active-result" data-option-array-index="5" style>5 (Strongly Agree)</li>
+                </ul>
+            </div>
         </div>
 
 
-    </div>
-    
 
+        
+        <hr>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+
+    </div>
+<script src="../data/friends.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+
+$('#myDropdown').on('show.bs.dropdown', function () {
+    $('.dropdown-toggle').dropdown();
+})
+
+$('.submit').click(function () {
+           event.preventDefault()
+
+           var newObject = {
+            name = $('#name').val(),
+            photo = $('#userPhoto').val(),
+            scores: [
+            $("#q1").val(),
+            $("#q2").val(),
+            $("#q3").val(),
+            $("#q4").val(),
+            $("#q5").val(),
+            $("#q6").val(),
+            $("#q7").val(),
+            $("#q8").val(),
+            $("#q9").val(),
+            $("#q10").val()
+           ]
+        };
+
+        $.post("/api/friends", newObject)
+            .then(function (data) {
+            $("match-name").text(data.name);
+            $("#match-img").attr("src", data.photo,
+            
+            $("#results-modal").modal("toggle"))
+               });
+           })
+               
+        
     
+           
+
+</script>
+       
+ 
 </body>
 </html>

@@ -1,20 +1,14 @@
-var express = require ('express')
-var router = require('./apiRoutes')
+var express = require('express')
 
-//include two routes
-router.get('/', function(req, res) {
-    res.send('homepage')
+//create varibale called router to create a router instance and build off of it with gets, puts,  post delets, and simply module exports router
+//This is what build a routing middleware as express calls it, wehn you require it, use this code
+var router = express.Router()
+
+router.get('/', function(req,res) {
+    res.send('home.html')
 })
 
-// module.exports = router
-// //First: A GET Route to /survey which should display the survey page.
-// app.get("/survey", function(req,res){
-//     res.sendFile(path.join(__dirname, "survey.html"));
-// })
 
-// //Second: A default, catch-all route that leads to home.html which displays the home page.
-// app.get("/", function(req,res){
-//     res.sendFile(path.join(__dirname, "home.html"));
-//     // res.render('home')
-// })
+module.exports = router
 
+//there self contained within these router objects, you have created with express
