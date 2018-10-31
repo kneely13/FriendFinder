@@ -249,7 +249,7 @@
             
             <div class="chosen-drop">
                 <div class="chosen-search">
-                    <input type="text" autocomplete="off">
+                    <input type="text" autocomplete="on">
                 </div>
                 <ul class="chosen-results">
                     <li class="active-result" data-option-array-index="1" style>1 (Strongly Disagree)</li>
@@ -326,9 +326,9 @@ $('.submit').click(function () {
         $.post("/api/friends", newObject)
             .then(function (data) {
             $("match-name").text(data.name);
-            $("#match-img").attr("src", data.photo,
+            $("#match-img").attr("src", data.photo),
             
-            $("#results-modal").modal("toggle"))
+            $("#results-modal").modal("toggle")
                });
            })
                
