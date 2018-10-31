@@ -11,10 +11,33 @@
     background-color: orange;
 }
 
+.friendH{
+position: relative;
+}
+.container-home {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width:570px;
+    background-color: orange;
+    background-color: #52b2ff;
+    padding: 2em;
+}
+
+.container p{
+        
+        width:970px;
+        background-color: #52b2ff;
+}
+
 #surveyTitle {
     font-size:55px;
 }
 
+.surveyBtn {
+    font-size: 20px;
+}
 .chosen-container {
     position: relative;
     display: inline-block;
